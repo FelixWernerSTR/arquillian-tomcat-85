@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.fewe.arquillian.tomcat</groupId>
-	<artifactId>arquillian-tomcat</artifactId>
+	<artifactId>arquillian-tomcat-85</artifactId>
 	<version>20.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>arquillian-tomcat</name>
+	<name>arquillian-tomcat-85</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>

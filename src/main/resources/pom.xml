@@ -9,14 +9,19 @@
 	<modelVersion>4.0.0</modelVersion>
 
   <groupId>de.fewe.arquillian</groupId>
-  <artifactId>arquillian-tomca</artifactId>
+  <artifactId>arquillian-tomcat-85</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>arquillian-wildfly</name>
   <url>http://maven.apache.org</url>
   
-  <description>ATTENTION! This POM will misused for loading/adding dependencies to lib of deployment-inspector.ear</description>
+  <description>ATTENTION! This POM will misused for loading/adding dependencies to lib of deployment-inspector.ear
+  		File[] libs = Maven.configureResolver()
+				.loadPomFromFile("src/main/resources/pom.xml")
+				.importDependencies(ScopeType.COMPILE).resolve().withoutTransitivity().asFile();
+		ear.addAsLibraries(libs);
+  </description>
 
 	<dependencies>
 		<dependency>

@@ -5,7 +5,7 @@
 
 	<groupId>de.fewe.arquillian.tomcat</groupId>
 	<artifactId>arquillian-tomcat-85</artifactId>
-	<version>20.0.1-SNAPSHOT</version>
+	<version>20.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>arquillian-tomcat-85</name>
@@ -15,8 +15,8 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        
         <org.apache.tomcat.version>8.5.54</org.apache.tomcat.version>
+        <springframework.version>5.2.6.RELEASE</springframework.version>
 	</properties>
 
 
@@ -37,11 +37,54 @@
 	</dependencyManagement>
 
 	<dependencies>
-
+	
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-core</artifactId>
+		    <version>${springframework.version}</version>
+		</dependency>
+		
+	    <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aop</artifactId>
+		    <version>${springframework.version}</version>
+		</dependency>
+		
+	    <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+		
+		<dependency>
+	        <groupId>org.springframework</groupId>
+	        <artifactId>spring-web</artifactId>
+	        <version>${springframework.version}</version>
+        </dependency>
+		
+				<!-- Spring JDBC Support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${springframework.version}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-context</artifactId>
+		    <version>${springframework.version}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-beans</artifactId>
+		    <version>${springframework.version}</version>
 		</dependency>
 
         <dependency>
@@ -106,11 +149,11 @@
 		</dependency>
 		
 		<dependency>
-            <groupId>net.sourceforge.htmlunit</groupId>
-            <artifactId>htmlunit</artifactId>
-            <version>2.39.1</version>
-            <scope>test</scope>
-        </dependency>
+     <groupId>net.sourceforge.htmlunit</groupId>
+     <artifactId>htmlunit</artifactId>
+     <version>2.39.1</version>
+     <scope>test</scope>
+    </dependency>
 
 		<dependency>
 			<groupId>junit</groupId>

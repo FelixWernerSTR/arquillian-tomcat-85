@@ -6,7 +6,7 @@
         <defaultProtocol type="Servlet 3.0"/>
         <configuration>
             <property name="unpackArchive">true</property>
-            <property name="catalinaHome">G:/devel/tomcat/apache-tomcat-8.5.54</property>
+            <property name="catalinaHome">D:\devel\tomcat\apache-tomcat-8.5.54</property>
             <!-- Add user and pass to your conf/tomcat-users.xml-->
             <property name="user">${tomcat.user}</property>
             <property name="pass">${tomcat.pass}</property>

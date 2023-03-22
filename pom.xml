@@ -16,7 +16,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         
-        <org.apache.tomcat.version>8.5.54</org.apache.tomcat.version>
+        <org.apache.tomcat.version>8.5.86</org.apache.tomcat.version>
 	</properties>
 
 
